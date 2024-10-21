@@ -31,11 +31,11 @@ dependencies {
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.springframework.kafka:spring-kafka-test'
+
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	// https://mvnrepository.com/artifact/com.sun.mail/jakarta.mail
 	implementation group: 'com.sun.mail', name: 'jakarta.mail', version: '2.0.1'
-
+	implementation group: 'org.springframework.kafka', name: 'spring-kafka', version: '3.2.4'
 }
 
 tasks.named('test') {

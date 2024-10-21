@@ -8,9 +8,11 @@ import jakarta.mail.Authenticator;
 import jakarta.mail.PasswordAuthentication;
 import jakarta.mail.Session;
 import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Service;
 
 import java.util.Properties;
 
+@Service
 public class SendEmailEventConsumer {
     private ObjectMapper objectMapper;
 
@@ -36,7 +38,7 @@ public class SendEmailEventConsumer {
         Authenticator auth = new Authenticator() {
             //override the getPasswordAuthentication method
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("123@gmail.com", "password");
+                return new PasswordAuthentication("ytoxic81@@gmail.com", "xlwxonsrwacghatv");
             }
         };
         Session session = Session.getInstance(props, auth);
